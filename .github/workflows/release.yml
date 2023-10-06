@@ -45,11 +45,11 @@ jobs:
         
     steps:
     - name: Any Name Bash Test Step
-        shell: bash
-        run: |
-          echo "variable"
-        env:
-          variable: ${{ env.REGISTRY }}
+      shell: bash
+      run: |
+        echo "variable"
+      env:
+        variable: ${{ env.REGISTRY }}
     - uses: actions/checkout@v3
     - name: Log in to the Container registry
       uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
