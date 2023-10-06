@@ -47,7 +47,7 @@ jobs:
     - name: Any Name Bash Test Step
       shell: bash
       run: |
-        echo "variable"
+        echo $variable
       env:
         variable: ${{ env.REGISTRY }}
     - uses: actions/checkout@v3
